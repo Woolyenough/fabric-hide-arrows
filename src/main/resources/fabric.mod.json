@@ -3,7 +3,7 @@
   "id": "hidearrows",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Fabric Hide Arrows",
   "description": "Hides arrows which hit entities (client sided)",
   "authors": [
     "Woolyenough (SRNOs)"
