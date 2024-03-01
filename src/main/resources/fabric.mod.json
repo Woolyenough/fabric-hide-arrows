@@ -2,34 +2,37 @@
   "schemaVersion": 1,
   "id": "hidearrows",
   "version": "${version}",
-
-  "name": "Fabric Hide Arrows",
-  "description": "Hides arrows which hit entities (client sided)",
+  "name": "Hide Arrows",
+  "description": "Hides arrows which hit entities",
   "authors": [
-    "Woolyenough (SRNOs)"
+    "Woolyenough"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://github.com/Woolyenough/fabric-hide-arrows",
+    "sources": "https://github.com/Woolyenough/fabric-hide-arrows"
   },
-
-  "license": "CC0-1.0",
-  "icon": "assets/woolyenough/icon.png",
-
+  "icon": "assets/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.woolyenough.hidearrows.HideArrows"
+      "wtf.wooly.hide_arrows.HideArrows"
+    ],
+    "client": [
+      "wtf.wooly.hide_arrows.HideArrowsClient"
     ]
   },
   "mixins": [
-    "hidearrows.mixins.json"
+    "hide-arrows.mixins.json",
+    {
+      "config": "hide-arrows.client.mixins.json",
+      "environment": "client"
+    }
   ],
-
   "depends": {
-    "fabricloader": ">=0.7.4",
-    "fabric": "*",
-    "minecraft": ">=1.16"
+    "fabricloader": ">=0.15.7",
+    "minecraft": ">=1.17",
+    "java": ">=17",
+    "fabric-api": "*"
   },
   "suggests": {
     "another-mod": "*"
