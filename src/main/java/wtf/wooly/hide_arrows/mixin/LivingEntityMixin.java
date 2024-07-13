@@ -9,10 +9,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
-
     @Inject(method = "setStuckArrowCount", at = @At("HEAD"), cancellable = true)
     private void setStuckArrowCountMixin(int stuckArrowCount, CallbackInfo ci) {
-
         ci.cancel();
     }
 }
