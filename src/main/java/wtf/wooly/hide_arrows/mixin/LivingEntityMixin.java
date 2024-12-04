@@ -1,6 +1,5 @@
 package wtf.wooly.hide_arrows.mixin;
 
-
 import net.minecraft.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
