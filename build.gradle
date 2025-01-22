@@ -11,11 +11,18 @@ base {
 }
 
 repositories {
-	mavenCentral()
+
 }
 
 loom {
 	splitEnvironmentSourceSets()
+
+	mods {
+		"hide-arrows" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
 }
 
 dependencies {
@@ -44,4 +51,10 @@ java {
 
 	sourceCompatibility = JavaVersion.VERSION_21
 	targetCompatibility = JavaVersion.VERSION_21
+}
+
+jar {
+	from("LICENSE") {
+		rename { "${it}_${project.base.archivesName.get()}"}
+	}
 }

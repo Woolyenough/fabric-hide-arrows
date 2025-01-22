@@ -3,7 +3,7 @@
 	"package": "wtf.wooly.hide_arrows.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"ArrowsMixin"
+		"StuckArrowsFeatureRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
