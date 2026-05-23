@@ -19,6 +19,9 @@
     ],
     "client": [
       "wtf.wooly.hide_arrows.HideArrowsClient"
+    ],
+    "modmenu": [
+      "wtf.wooly.hide_arrows.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -29,12 +32,12 @@
     }
   ],
   "depends": {
-    "fabricloader": ">=0.16",
-    "minecraft": ">=1.21.2",
-    "java": ">=21",
+    "fabricloader": ">=0.19",
+    "minecraft": ">=26.1",
+    "java": ">=25",
     "fabric-api": "*"
   },
   "suggests": {
-    "another-mod": "*"
+    "modmenu": "*"
   }
 }

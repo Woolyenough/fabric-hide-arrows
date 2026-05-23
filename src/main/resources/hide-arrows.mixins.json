@@ -1,11 +1,11 @@
 {
-  "required": true,
-  "package": "wtf.wooly.hide_arrows.mixin",
-  "compatibilityLevel": "JAVA_21",
-  "mixins": [
-    "LivingEntityMixin"
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  }
+	"required": true,
+	"package": "wtf.wooly.hide_arrows.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"LivingEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
 }
