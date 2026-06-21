@@ -47,7 +47,7 @@ public class HideArrowsConfigScreen extends Screen {
     @Override
     public void onClose() {
         HideArrowsConfig.get().save();
-        this.minecraft.setScreen(this.parent);
+        this.minecraft.setScreenAndShow(this.parent);
     }
 
     /** Vanilla slider mapped to discrete stops; the far-right stop reads "Unlimited". */
